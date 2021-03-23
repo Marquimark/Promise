@@ -27,14 +27,14 @@ export const heroesCiclo = async () => {
 
     console.time( 'HeroesCiclo' );
 
-    // const heroes =  await Promise.all( heroesPromesas );
-    // heroes.forEach( heroe => console.log(heroe) );
+    const heroes =  await Promise.all( heroesPromesas );
+    heroes.forEach( heroe => console.log(heroe) );
 
     // for await
 
-    for await (const heroe of heroesPromesas ){
-        console.log( heroe );
-    }
+    // for await (const heroe of heroesPromesas ){
+    //     console.log( heroe );
+    // }
 
 
     // console.log( heroes );
